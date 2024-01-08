@@ -1,0 +1,147 @@
+@charset "utf-8";
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    list-style-type: none;
+    /* font-family: 'Noto Serif TC', serif; */
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:rgb(230, 230, 230);
+}
+
+.banner{
+    display: flex;
+    padding:15px;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width:300px;
+}
+
+#menuToggle{
+    display:none;
+}
+
+.menu-btn{
+    float: right;
+    background: none;
+    z-index: 99;
+    margin-right: -46%;
+}
+
+.menu-btn:hover{
+    background: none;
+    border: none;
+    z-index: 99;
+    margin-right: -46%;
+}
+
+.menu-btn-2{
+    display: none;
+}
+
+.menu-btn-2:hover{
+    display: none;
+}
+
+#menuToggle:checked ~ .menu-btn{
+    display: none;
+}
+
+#menuToggle:checked ~ .menu-btn:hover{
+    display: none;
+}
+
+#menuToggle:checked ~ .menu-btn-2{
+    display: block;
+    float: right;
+    border: none;
+    background: none;
+    z-index: 99;
+    margin-right: -46%;
+}
+
+#menuToggle:checked ~ .menu-btn-2:hover{
+    display: block;
+    float: right;
+    border: none;
+    background: none;
+    margin-right: -46%;
+    z-index: 99;
+}
+
+ul{
+    padding: 100px;
+    color: blue;
+    list-style: none;
+    background-color: #ffffff;
+    background-size: 80%;
+    background-position: 50% -10%;
+    background-repeat: no-repeat;
+} 
+
+.brg-menu{
+    display:none;
+}
+
+#menuToggle:checked ~ .brg-menu{
+    float: right;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    display:block;
+    z-index: 99;
+    border-radius: 30px;
+}
+
+ul.brg-menu li{
+    text-decoration: none;
+}
+
+ul.brg-menu li a{
+    text-decoration: none;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: blue;
+}
+
+ul.brg-menu li:hover > a{
+    text-decoration: none;
+    font-size: 50px;
+    letter-spacing: 3px;
+    /* color: white; */
+    color:blue;
+    border: 5px solid blue;
+    border-width: 120%;
+    border-radius: 10px;
+    /* background-color: rgba(255, 228, 24, 1); */
+}
+
+.form{
+    background-color:aliceblue;
+    width:100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+p{
+    text-align: center;
+    font-size: 6vw;
+    color: blue;
+    font-weight: 600;
+}
+
+.number{
+    text-align: center;
+    color: rgba(255, 228, 24, 1);
+    font-size: 10vw;
+    font-weight: 800;
+}
